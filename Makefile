@@ -24,5 +24,5 @@ clean:
 	${CLEAN}
 
 format:
-	iostat ${MODULE}
-	black ${MODULE}
+	${BIN}isort ${MODULE}
+	${BIN}black ${MODULE}
