@@ -12,6 +12,7 @@ MODULE := nhl_api_client
 
 develop:
 	python -m venv env
+	${PIP} install wheel
 	${PIP} install pip-tools
 	${BIN}pip-compile requirements.in
 	${PIP} install -r requirements-dev.txt
