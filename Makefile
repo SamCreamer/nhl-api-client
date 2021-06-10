@@ -17,8 +17,7 @@ develop:
 	${PIP} install -r requirements-dev.txt
 
 test: develop
-	echo y | ${BIN}mypy --install-types
-	${BIN}mypy nhl_client
+	echo y | ${BIN}mypy ${MODULE} --install-types
 	${BIN}pytest tests
 
 clean:
